@@ -109,11 +109,11 @@
         display: none;
     }
   }  
-
   
   .header__link {
     text-decoration: none;
     color: $secondary-text-color;
+    transition: color 250ms $timing-function;
     
     &:hover,
     &:focus {
@@ -140,6 +140,8 @@
     text-transform: uppercase;
     color: $accent-color;
     cursor: pointer;
+    transition: color 250ms $timing-function, 
+    background-color 250ms $timing-function;
     
     &:hover,
     &:focus {
